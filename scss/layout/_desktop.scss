@@ -1,0 +1,30 @@
+/* media query desktop */
+@media only screen and (min-width: 1024px){
+    // extend
+    %dis-flex-jus-centerr{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav{
+        @extend %dis-flex-jus-centerr;
+    }
+    
+    nav ul li{
+        display: flex;
+        align-items: center;
+        border: 0 rgba(255, 255, 255, 0) solid;
+    }
+
+    nav ul li a{
+        border: black solid 1px;
+        border-radius: 25px;
+        padding: 10px;
+}
+}
